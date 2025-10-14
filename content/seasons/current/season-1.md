@@ -18,7 +18,7 @@ Examples of eligible projects:
 - Moving TVL into interop-compatible formats  
 - Tooling that tracks or increases adoption  
 
-[Apply for a Grant →](https://app.opgrants.io/programs/959/apply)
+[Apply for a Grant →](https://grantsapp.scroll.io/programs/969/apply)
 
 ---
 
