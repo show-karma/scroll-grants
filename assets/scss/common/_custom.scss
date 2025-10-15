@@ -398,3 +398,15 @@ a {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important;
 }
+
+// Navbar button custom styling
+.navbar .btn-primary.rounded-pill {
+  background-color: #ffeeda !important;
+  color: #000000 !important;
+  border: none !important;
+
+  &:hover {
+    background-color: #ffd9b8 !important;
+    color: #000000 !important;
+  }
+}

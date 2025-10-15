@@ -1,32 +1,13 @@
-# Grants dropdown
+# Main navigation
 [[main]]
-  name = "Grants"
+  name = "Programs"
+  url = "/programs/"
   weight = 10
-  identifier = "grants"
 
 [[main]]
-  name = "Audit Grants"
-  url = "/seasons/current/season-8/"
-  parent = "grants"
-  weight = 1
-
-[[main]]
-  name = "Community Grants"
-  url = "/seasons/current/season-8/"
-  parent = "grants"
-  weight = 2
-
-# Recipients link
-[[main]]
-  name = "Recipients"
-  url = "/seasons/archive/season-7/"
+  name = "Upcoming Events"
+  url = "/events/"
   weight = 20
-
-# Governance link
-[[main]]
-  name = "Governance"
-  url = "https://scroll.io/governance"
-  weight = 30
 
 # More dropdown
 [[main]]
@@ -35,20 +16,20 @@
   identifier = "more"
 
 [[main]]
-  name = "Scroll"
+  name = "About Scroll"
   url = "https://scroll.io/"
   parent = "more"
   weight = 1
 
 [[main]]
   name = "Forum"
-  url = "https://gov.scroll.io/"
+  url = "https://forum.scroll.io/"
   parent = "more"
   weight = 2
 
 [[main]]
-  name = "Delegates"
-  url = "https://vote.scroll.io/delegates"
+  name = "Governance"
+  url = "https://scroll.io/governance"
   parent = "more"
   weight = 3
 

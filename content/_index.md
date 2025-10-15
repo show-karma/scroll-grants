@@ -1,13 +1,13 @@
 ---
-title: "Scroll Grants"
-description: "Supporting builders and projects on Scroll through strategic grant allocation"
-lead: "We're dedicated to fostering growth and innovation in the Scroll ecosystem by providing grants to builders, developers, and projects that align with our mission."
+title: "Scroll Community Grants Program"
+description: "Empowering communities worldwide to drive growth and innovation in the Scroll ecosystem"
+lead: "Empowering communities worldwide to drive growth and innovation in the Scroll ecosystem."
 date: 2024-01-31T08:47:36+00:00
-lastmod: 2024-01-31T08:47:36+00:00
+lastmod: 2025-10-15T00:00:00+00:00
 draft: false
 seo:
-  title: "Scroll Grants - Supporting Builders on Scroll"
-  description: "The Scroll Grants provides strategic grant allocation to foster growth and innovation in the Scroll ecosystem. Apply for Season 8 starting August 20th."
+  title: "Scroll Community Grants Program - Building the Scroll Ecosystem"
+  description: "Empowering communities worldwide to drive growth and innovation in the Scroll ecosystem."
   canonical: ""
   noindex: false
 ---

@@ -11,7 +11,7 @@ This website has been created by adapting the Optimism Grants Council site for S
 - Updated external links to point to Scroll domains
 
 ### 2. Branding Updates
-- Primary color: `#FF684B` (Scroll primary)
+- Primary color: `#ffeeda` (Scroll primary)
 - Light color: `#F18740`
 - Background: `#FFF8F3`
 - Updated all CSS variables in `assets/scss/common/_variables-custom.scss`
@@ -28,7 +28,7 @@ This website has been created by adapting the Optimism Grants Council site for S
 - Downloaded official Scroll logo PNG from scroll.io (`static/apple-touch-icon.png`)
 - Downloaded Scroll OG image from scroll.io (`static/cover.jpg`)
 - Created "S" logo in SVG format for additional icons
-- Logo colors match Scroll brand (#FF684B background, #FFF8F3 text)
+- Logo colors match Scroll brand (#ffeeda background, #FFF8F3 text)
 
 ## Action Items for Manual Update
 
@@ -69,7 +69,7 @@ Some placeholder URLs may need to be updated once Scroll's grant system is live:
 6. Replace placeholder URLs with actual grant application URLs
 
 ## Scroll Brand Colors Reference
-- Primary: #FF684B
+- Primary: #ffeeda
 - Light: #F18740
 - Dark: #FFDEB5
 - Background: #FFF8F3
