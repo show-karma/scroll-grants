@@ -25,19 +25,19 @@
   name = "Upcoming Events"
   url = "https://luma.com/scroll-community?k=c"
   parent = "more"
-  weight = 1
+  weight = 2
 
 [[main]]
   name = "Forum"
   url = "https://forum.scroll.io/"
   parent = "more"
-  weight = 2
+  weight = 3
 
 [[main]]
   name = "Governance"
   url = "https://scroll.io/governance"
   parent = "more"
-  weight = 3
+  weight = 4
 
 [[social]]
   name = "Twitter"

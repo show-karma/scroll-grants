@@ -21,7 +21,7 @@ mainSections = ["docs"]
 
   ## Button
   navBarButton = true # false (default) or true
-  navBarButtonUrl = "https://app.karmahq.xyz/scroll/programs/969"
+  navBarButtonUrl = "https://grantsapp.scroll.io/programs/969"
   navBarButtonText = "Apply for Grant"
 
   # FlexSearch
