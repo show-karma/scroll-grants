@@ -4,11 +4,6 @@
   url = "/programs/"
   weight = 10
 
-[[main]]
-  name = "Upcoming Events"
-  url = "https://luma.com/scroll-community?k=c"
-  weight = 20
-
 # More dropdown
 [[main]]
   name = "More"
