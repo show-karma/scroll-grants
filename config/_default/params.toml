@@ -19,11 +19,6 @@ mainSections = ["docs"]
   navbarSticky = true # true (default) or false
   containerBreakpoint = "lg" # "", "sm", "md", "lg" (default), "xl", "xxl", or "fluid"
 
-  ## Button
-  navBarButton = true # false (default) or true
-  navBarButtonUrl = "https://grantsapp.scroll.io/programs/969"
-  navBarButtonText = "Apply for Grant"
-
   # FlexSearch
   flexSearch = true # true (default) or false
   searchExclKinds = [] # list of page kinds to exclude from search indexing (e.g. ["home", "taxonomy", "term"] )
