@@ -4,106 +4,12 @@
     <div class="row justify-content-center">
       <div class="col-lg-12 text-center">
         <h1 class="mb-4">{{ .Title }}</h1>
-        <p class="lead mb-5">{{ .Params.lead | safeHTML }}</p>
+        <p class="lead mb-3">{{ .Params.lead | safeHTML }}</p>
       </div>
       <div class="col-lg-10 col-xl-10 text-center">
-        <div class="alert mb-5" role="alert" style="background-color: #ffeeda; border: none;">
-          <div class="d-flex align-items-center justify-content-center">
-            <div class="flex-shrink-0">
-              <span class="badge rounded-pill p-3 me-3" style="background-color: #000000;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 16 16">
-                  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-                  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-                </svg>
-              </span>
-            </div>
-            <div class="flex-grow-1 text-start">
-              <h4 class="alert-heading mb-1 mt-0">Community Grants Program - Applications Open!</h4>
-              <p class="mb-0">Apply now through December 19, 2025. Grants from $200 to $10,000.</p>
-            </div>
-          </div>
-        </div>
         <div class="text-center">
-          <a class="btn btn-lg me-3 mb-3" href="https://grantsapp.scroll.io/programs/969" role="button" style="background-color: #ffeeda; color: #000000; border: none;">Apply for Grant</a>
-          <a class="btn btn-lg mb-3" href="https://forum.scroll.io/t/introducing-community-grants-support-program/1164" role="button" style="border: 2px solid #000000; color: #000000; background-color: white;">Learn More</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-{{ end }}
-
-{{ define "sidebar-prefooter" }}
-<section class="section section-md bg-light">
-  <div class="container">
-    <div class="row justify-content-center text-center mb-5">
-      <div class="col-lg-8">
-        <h2 class="mb-4">What We Support</h2>
-        <p class="lead">We fund projects that build community, drive adoption, and create meaningful impact across the Scroll ecosystem.</p>
-      </div>
-    </div>
-    <div class="row justify-content-center g-4">
-      <div class="col-lg-6 col-md-6">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="card-body text-center p-4">
-            <div class="mb-3">
-              <div class="rounded-circle p-3 d-inline-flex" style="background-color: #ffeeda;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 16 16">
-                  <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
-                  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
-                </svg>
-              </div>
-            </div>
-            <h3 class="h5 card-title">Events</h3>
-            <p class="card-text">Large-scale gatherings with 100+ attendees to strengthen networks, exchange knowledge, and promote Scroll’s ecosystem products</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-6">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="card-body text-center p-4">
-            <div class="mb-3">
-              <div class="rounded-circle p-3 d-inline-flex" style="background-color: #ffeeda;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 16 16">
-                  <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
-                </svg>
-              </div>
-            </div>
-            <h3 class="h5 card-title">Meetups</h3>
-            <p class="card-text">Community gatherings focused on exploring Scroll, connecting builders, and sparking collaboration through hands-on activities.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-6">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="card-body text-center p-4">
-            <div class="mb-3">
-              <div class="rounded-circle p-3 d-inline-flex" style="background-color: #ffeeda;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 16 16">
-                  <path d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
-                  <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
-                  <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
-                </svg>
-              </div>
-            </div>
-            <h3 class="h5 card-title">Hackathons</h3>
-            <p class="card-text">Competitions for developers to discover Scroll's technology and build innovative solutions leveraging our ecosystem.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-6">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="card-body text-center p-4">
-            <div class="mb-3">
-              <div class="rounded-circle p-3 d-inline-flex" style="background-color: #ffeeda;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 16 16">
-                  <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z"/>
-                </svg>
-              </div>
-            </div>
-            <h3 class="h5 card-title">Flex</h3>
-            <p class="card-text">Creative proposals that don't fit traditional categories, including education programs, scholarships, and unique community projects.</p>
-          </div>
+          <a class="btn btn-lg me-3 mb-3" href="https://grantsapp.scroll.io/programs/969" role="button" style="background-color: #ffeeda; color: #000000; border: none;">Apply for a Grant</a>
+          <a class="btn btn-lg mb-3" href="https://grantsapp.scroll.io/programs/977" role="button" style="border: 2px solid #000000; color: #000000; background-color: white;">Apply to Security Subsidy</a>
         </div>
       </div>
     </div>
@@ -125,66 +31,138 @@
   <div class="container">
     <div class="row justify-content-center text-center mb-5">
       <div class="col-lg-8">
-        <h2 class="mb-4">Programs</h2>
+        <h2 class="mb-4">Community Grants Program</h2>
       </div>
     </div>
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <div class="card border-0 shadow-sm">
-          <div class="card-body p-5">
-            <h3 class="h4 mb-4 text-center">Scroll Community Grants</h3>
-            <div class="mx-auto mb-4" style="max-width: 600px;">
-              <div class="row g-4 justify-content-center">
-                <div class="col-6">
-                  <div class="text-center">
-                  <div class="rounded-circle p-3 d-inline-flex" style="background-color: #ffeeda;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 16 16">
-                      <path d="M0 3a2 2 0 0 1 2-2h13.5a.5.5 0 0 1 0 1H15v2a1 1 0 0 1 1 1v8.5a1.5 1.5 0 0 1-1.5 1.5h-12A2.5 2.5 0 0 1 0 12.5V3zm1 1.732V12.5A1.5 1.5 0 0 0 2.5 14h12a.5.5 0 0 0 .5-.5V5H2a1.99 1.99 0 0 1-1-.268zM1 3a1 1 0 0 0 1 1h12V2H2a1 1 0 0 0-1 1z"/>
-                    </svg>
-                  </div>
-                  <h6 class="mb-2">Grant Range</h6>
-                  <p class="mb-0 text-muted">$200 - $10,000</p>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="text-center">
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-12">
+        <div class="row g-4 mb-5">
+          <div class="col-lg-8 col-md-8">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body d-flex flex-column justify-content-center align-items-center text-center p-4">
+                <div class="mb11">
                   <div class="rounded-circle p-3 d-inline-flex" style="background-color: #ffeeda;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 16 16">
                       <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
                       <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
                     </svg>
                   </div>
-                  <h6 class="mb-2">Duration</h6>
-                  <p class="mb-0 text-muted">3 Months</p>
                 </div>
+                <h3 class="h5 card-title">Events</h3>
+                <p class="card-text">Large-scale gatherings with 100+ attendees to strengthen networks, exchange knowledge, and promote Scroll's ecosystem products</p>
               </div>
-              <div class="col-6">
-                <div class="text-center">
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-8">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body d-flex flex-column justify-content-center align-items-center text-center p-4">
+                <div class="mb-1">
                   <div class="rounded-circle p-3 d-inline-flex" style="background-color: #ffeeda;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 16 16">
-                      <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-                      <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                      <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
                     </svg>
                   </div>
-                  <h6 class="mb-2">Deadline</h6>
-                  <p class="mb-0 text-muted">Dec 19 2025</p>
                 </div>
+                <h3 class="h5 card-title">Meetups</h3>
+                <p class="card-text">Community gatherings focused on exploring Scroll, connecting builders, and sparking collaboration through hands-on activities.</p>
               </div>
-              <div class="col-6">
-                <div class="text-center">
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-8">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body d-flex flex-column justify-content-center align-items-center text-center p-4">
+                <div class="mb-1">
                   <div class="rounded-circle p-3 d-inline-flex" style="background-color: #ffeeda;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 16 16">
-                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                      <path d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                      <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+                      <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
                     </svg>
                   </div>
-                  <h6 class="mb-2">Approval Time</h6>
-                  <p class="mb-0 text-muted">Within 30 days of application</p>
                 </div>
+                <h3 class="h5 card-title">Hackathons</h3>
+                <p class="card-text">Competitions for developers to discover Scroll's technology and build innovative solutions leveraging our ecosystem.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-8">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body d-flex flex-column justify-content-center align-items-center text-center p-4">
+                <div class="mb-1">
+                  <div class="rounded-circle p-3 d-inline-flex" style="background-color: #ffeeda;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 16 16">
+                      <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z"/>
+                    </svg>
+                  </div>
+                </div>
+                <h3 class="h5 card-title">Flex</h3>
+                <p class="card-text">Creative proposals that don't fit traditional categories, including education programs, scholarships, and unique community projects.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="card border-0 shadow-sm">
+          <div class="card-body p-5">
+            <div class="mx-auto mb-4" style="max-width: 600px;">
+              <div class="row g-4 justify-content-center">
+                <div class="col-6">
+                  <div class="text-center">
+                    <div class="rounded-circle p-3 d-inline-flex" style="background-color: #ffeeda;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 16 16">
+                        <path d="M0 3a2 2 0 0 1 2-2h13.5a.5.5 0 0 1 0 1H15v2a1 1 0 0 1 1 1v8.5a1.5 1.5 0 0 1-1.5 1.5h-12A2.5 2.5 0 0 1 0 12.5V3zm1 1.732V12.5A1.5 1.5 0 0 0 2.5 14h12a.5.5 0 0 0 .5-.5V5H2a1.99 1.99 0 0 1-1-.268zM1 3a1 1 0 0 0 1 1h12V2H2a1 1 0 0 0-1 1z"/>
+                      </svg>
+                    </div>
+                    <h6 class="mb-2">Details</h6>
+                    <p class="mb-0 text-muted">$200 - $10,000</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="text-center">
+                    <div class="rounded-circle p-3 d-inline-flex" style="background-color: #ffeeda;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 16 16">
+                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                      </svg>
+                    </div>
+                    <h6 class="mb-2">Duration</h6>
+                    <p class="mb-0 text-muted">3 Months</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="text-center">
+                    <div class="rounded-circle p-3 d-inline-flex" style="background-color: #ffeeda;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 16 16">
+                        <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                        <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                      </svg>
+                    </div>
+                    <h6 class="mb-2">Deadline</h6>
+                    <p class="mb-0 text-muted">Dec 19, 2025</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="text-center">
+                    <div class="rounded-circle p-3 d-inline-flex" style="background-color: #ffeeda;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                      </svg>
+                    </div>
+                    <h6 class="mb-2">Approval</h6>
+                    <p class="mb-0 text-muted">Within 30 days of application</p>
+                  </div>
                 </div>
               </div>
             </div>
+            <p class="mb-4 text-muted text-center">We prioritize: clear KPIs, geographic diversity, transparency, and teams with community experience.</p>
+            <div class="text-center mb-3">
+              <a href="https://grantsapp.scroll.io/programs/969" class="btn btn-lg" style="background-color: #ffeeda; color: #000000; border: none;">Apply for a Grant</a>
+            </div>
             <div class="text-center">
-              <a href="https://grantsapp.scroll.io/programs/969" class="btn btn-lg" style="background-color: #ffeeda; color: #000000; border: none;">Apply Now</a>
+              <a href="https://forum.scroll.io/t/introducing-community-grants-support-program/1164" class="text-decoration-none" style="color: #000000;">Read full program details</a>
             </div>
           </div>
         </div>
@@ -192,5 +170,188 @@
     </div>
   </div>
 </section>
+
+<section class="section section-lg">
+  <div class="container">
+    <div class="row justify-content-center text-center mb-5">
+      <div class="col-lg-8">
+        <h2 class="mb-4">How Grants Work</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="row justify-content-center g-4">
+          <div class="col-md-7">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body p-4 text-center">
+                <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 50px; height: 50px; background-color: #ffeeda; color: #000000; font-weight: bold; font-size: 1.25rem;">1</div>
+                <p class="mb-0">Apply with project details, milestones, and KPIs</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body p-4 text-center">
+                <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 50px; height: 50px; background-color: #ffeeda; color: #000000; font-weight: bold; font-size: 1.25rem;">2</div>
+                <p class="mb-0">Review within 7 days + feedback</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body p-4 text-center">
+                <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 50px; height: 50px; background-color: #ffeeda; color: #000000; font-weight: bold; font-size: 1.25rem;">3</div>
+                <p class="mb-0">Milestone‑based funding</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body p-4 text-center">
+                <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 50px; height: 50px; background-color: #ffeeda; color: #000000; font-weight: bold; font-size: 1.25rem;">4</div>
+                <p class="mb-0">Execute and submit final report with metrics</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-md bg-light">
+  <div class="container">
+    <div class="row justify-content-center text-center mb-5">
+      <div class="col-lg-8">
+        <h2 class="mb-4">Security Subsidy Program</h2>
+        <p class="lead">Top‑tier audits and continuous protection at subsidized rates.</p>
+      </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-10">
+        <div class="card border-0 shadow-sm mb-2">
+          <div class="card-body p-5">
+            <h3 class="h5 mb-4 mt-1 text-center">Security Workflow</h3>
+            <div class="row g-4 justify-content-center">
+              <div class="col-md-4">
+                <div class="d-flex flex-column align-items-center text-center">
+                  <div class="rounded-circle p-3 d-inline-flex mb-1" style="background-color: #ffeeda;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 16 16">
+                      <path d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                      <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+                      <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+                    </svg>
+                  </div>
+                  <h4 class="h6 mb-2">Apply</h4>
+                  <p class="small text-muted mb-0">Share codebase, timeline, goals</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="d-flex flex-column align-items-center text-center">
+                  <div class="rounded-circle p-3 d-inline-flex mb-1" style="background-color: #ffeeda;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 16 16">
+                      <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+                    </svg>
+                  </div>
+                  <h4 class="h6 mb-2">Get matched</h4>
+                  <p class="small text-muted mb-0">Right providers/services for your stage</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="d-flex flex-column align-items-center text-center">
+                  <div class="rounded-circle p-3 d-inline-flex mb-1" style="background-color: #ffeeda;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 16 16">
+                      <path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/>
+                      <path d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                    </svg>
+                  </div>
+                  <h4 class="h6 mb-2">Secure continuously</h4>
+                  <p class="small text-muted mb-0">Funded audits + integrated protections</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-8">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body p-4">
+                <h3 class="h5 mb-3 text-center">What it Covers</h3>
+                <ul class="list-unstyled mb-0">
+                  <li class="mb-2 d-flex align-items-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill me-2 flex-shrink-0 mt-1" viewBox="0 0 16 16" style="color: #ffeeda;">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                    </svg>
+                    <span>Traditional audits via Areta Market</span>
+                  </li>
+                  <li class="d-flex align-items-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill me-2 flex-shrink-0 mt-1" viewBox="0 0 16 16" style="color: #ffeeda;">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                    </svg>
+                    <span>End-to-end security through Immunefi's Magnus</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body p-4">
+                <h3 class="h5 mb-3 text-center">How it Works</h3>
+                <ul class="list-unstyled mb-0">
+                  <li class="mb-2 d-flex align-items-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill me-2 flex-shrink-0 mt-1" viewBox="0 0 16 16" style="color: #ffeeda;">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                    </svg>
+                    <span>Service providers give 25% discount</span>
+                  </li>
+                  <li class="mb-2 d-flex align-items-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill me-2 flex-shrink-0 mt-1" viewBox="0 0 16 16" style="color: #ffeeda;">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                    </svg>
+                    <span>Subsidize up to 75%</span>
+                  </li>
+                  <li class="mb-2 d-flex align-items-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill me-2 flex-shrink-0 mt-1" viewBox="0 0 16 16" style="color: #ffeeda;">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                    </svg>
+                    <span>6 months free Magnus platform access + AI security copilot</span>
+                  </li>
+                  <li class="d-flex align-items-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill me-2 flex-shrink-0 mt-1" viewBox="0 0 16 16" style="color: #ffeeda;">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                    </svg>
+                    <span>Total budget: $500k for Scroll projects that show high potential</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-0">
+          <a href="https://grantsapp.scroll.io/programs/977" class="btn btn-lg" style="background-color: #ffeeda; color: #000000; border: none;">Apply to Security Subsidy</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 {{ end }}
 
+{{ define "sidebar-prefooter" }}
+<section class="section section-md">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 text-center">
+        <div class="py-4">
+          <div class="mb-4">
+            <a class="btn btn-lg me-3 mb-3" href="https://grantsapp.scroll.io/programs/969" role="button" style="background-color: #ffeeda; color: #000000; border: none;">Apply for a Grant</a>
+            <a class="btn btn-lg mb-3" href="https://grantsapp.scroll.io/programs/977" role="button" style="border: 2px solid #000000; color: #000000; background-color: white;">Apply to Security Subsidy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
