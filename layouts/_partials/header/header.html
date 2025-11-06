@@ -156,18 +156,8 @@
           </div>
           {{ end -}}
         </div>
-
-        <!-- Navbar button mobile -->
-        {{ if site.Params.doks.navBarButton -}}
-          <a class="btn btn-primary rounded-pill mt-2 btn-block d-xl-none" href="{{ site.Params.doks.navBarButtonUrl | relURL }}" role="button">{{ site.Params.doks.navBarButtonText }}</a>
-        {{ end -}}
       </div>
     </div>
-
-    <!-- Navbar button desktop -->
-    {{ if site.Params.doks.navBarButton -}}
-      <a class="btn btn-primary rounded-pill ms-3 me-2 px-4 order-xl-3 d-none d-xl-block" href="{{ site.Params.doks.navBarButtonUrl | relURL }}" role="button">{{ site.Params.doks.navBarButtonText }}</a>
-    {{ end -}}
 
   </div>
 </header>
