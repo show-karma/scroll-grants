@@ -1,8 +1,20 @@
-# Main navigation
+# Main navigation - Programs dropdown
 [[main]]
   name = "Programs"
-  url = "/programs/"
   weight = 10
+  identifier = "programs"
+
+[[main]]
+  name = "Community Grants Program"
+  url = "/programs/community-grants/"
+  parent = "programs"
+  weight = 1
+
+[[main]]
+  name = "Security Subsidy Program"
+  url = "/programs/security-subsidy/"
+  parent = "programs"
+  weight = 2
 
 # More dropdown
 [[main]]
