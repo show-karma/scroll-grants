@@ -19,4 +19,4 @@ We fund projects that build community, drive adoption, and create meaningful imp
 
 ## Get Involved
 
-Ready to contribute to the Scroll ecosystem? [Apply for a grant](https://www.karmahq.xyz/community/scroll/admin/funding-platform/958_42161/applications) or [read the full program details](https://forum.scroll.io/t/introducing-community-grants-support-program/1164).
+Ready to contribute to the Scroll ecosystem? [Apply for a grant](https://www.karmahq.org/community/scroll/admin/funding-platform/958_42161/applications) or [read the full program details](https://forum.scroll.io/t/introducing-community-grants-support-program/1164).
